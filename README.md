@@ -1,41 +1,61 @@
 # florianhoffarth.com
 
-Statische persönliche Website mit der Positionierung
-**Kommunalverwaltung · Führung · Digitalisierung · Kommunikation**.
-Die V1 übernimmt den freigegebenen Claude-Design-Entwurf aus der bereitgestellten ZIP.
+Kommunalverwaltung · Führung · Digitalisierung · Kommunikation
 
-## Struktur
+This repository contains the personal professional website of Florian Hoffarth.
+The site serves as a compact professional evidence layer — a digital appendix to
+the CV covering projects, publications and professional background.
+
+**Live site:** <https://florianhoffarth.com>
+
+*TLS certificate provisioning for the custom domain is currently pending.*
+
+## About
+
+The site presents a professional profile in German, structured around:
+
+- work in public administration
+- leadership and project coordination
+- digital transformation
+- selected digital projects
+- research and publications
+- verifiable references and contact details
+
+## Technical setup
+
+- static HTML and CSS
+- no JavaScript
+- no build step, no package manager, no dependencies
+- system fonts
+- local assets only
+- no analytics, no tracking, no cookies, no external embeds
+- deployed via GitHub Pages
+
+The pages can be opened directly in a browser; no tooling is required.
+
+## Deployment
+
+Deployment runs through GitHub Actions on pushes to `main`. The workflow copies
+an explicit allowlist of public site files into the Pages artifact, so repository
+documentation is not part of the published web root.
+
+## Project structure
 
 ```text
-index.html                      Beruflicher Werdegang, Projekte, Forschung, Kontakt
-impressum.html                  Anbieterangaben, ausdrücklich noch Entwurf
-datenschutz.html                Datenschutzhinweise, ausdrücklich noch Entwurf
-styles.css                      Gemeinsames Layout und responsive Regeln
-assets/portrait.png             Lokales Porträt aus dem Entwurf
-docs/production-open-items.md   Vor Veröffentlichung zu klärende Angaben
-docs/verification.md            Prüfungen, Designabgleich und Grenzen
+index.html                  Professional profile
+impressum.html              Legal notice
+datenschutz.html            Privacy notice
+styles.css                  Shared layout and responsive rules
+assets/portrait.png         Local portrait image
+.github/workflows/pages.yml GitHub Pages deployment
 ```
 
-## Lokal ansehen
+## Privacy
 
-Kein Build, Paketmanager oder JavaScript erforderlich. Die HTML-Dateien können
-direkt im Browser geöffnet werden. Für eine HTTP-Prüfung im Repository:
+- no analytics
+- no cookies
+- no tracking
+- no external embeds
+- local assets only
 
-```sh
-python -m http.server 8000 --bind 127.0.0.1
-```
-
-Danach `http://127.0.0.1:8000/index.html` im Browser öffnen. Der Server ist nur für
-die lokale Prüfung vorgesehen; mit Strg+C beenden.
-
-## Technische Grenzen
-
-- HTML und CSS, Systemschriftarten und ein lokales PNG; keine Abhängigkeiten.
-- Kein Formular-Backend, keine Cookies, kein Tracking und keine externen Embeds.
-- Externe Profile sind normale Links. E-Mail öffnet das lokale E-Mail-Programm.
-- Ausschließlich deutsche V1; kein Sprachumschalter und keine englischen Verweise.
-- Keine Hosting-, Domain-, DNS-, GitHub-Pages- oder Deployment-Konfiguration.
-
-Impressum und Datenschutz sind vor einer Veröffentlichung zu vervollständigen.
-Die [offenen Produktionsangaben](docs/production-open-items.md) und der
-[Prüfbericht](docs/verification.md) gehören zum Review. `noindex` ist kein Zugriffsschutz.
+Full details are published in the [privacy notice](https://florianhoffarth.com/datenschutz.html).
