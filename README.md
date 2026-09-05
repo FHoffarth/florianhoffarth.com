@@ -3,8 +3,8 @@
 Kommunalverwaltung · Führung · Digitalisierung · Kommunikation
 
 This repository contains the personal professional website of Florian Hoffarth.
-The site serves as a compact professional evidence layer — a digital appendix to
-the CV covering projects, publications and professional background.
+The site serves as a compact professional evidence layer and digital appendix to
+the CV, covering projects, publications and professional background.
 
 **Live site:** <https://florianhoffarth.com>
 
