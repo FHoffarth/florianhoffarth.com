@@ -25,9 +25,33 @@ Live-System und konkreten Freigabeblockern.
   Besuch einer Pages-Website Besucher-IP-Adressen zu Sicherheitszwecken protokolliert
   und gespeichert werden, unabhängig von einer Anmeldung bei GitHub. Diese Information
   ist im Datenschutztext enthalten.
-- **Unbelegte Hostingdetails:** Es werden keine konkreten Log-Speicherfristen,
-  Serverstandorte, Unterauftragnehmer, Vertragsdetails oder Mechanismen internationaler
-  Datenübermittlung behauptet.
+- **Rechtsgrundlage der Auslieferung:** Art. 6 Abs. 1 lit. f DSGVO für die vom
+  Websitebetreiber veranlasste erforderliche Verarbeitung zur sicheren, zuverlässigen
+  und missbrauchsresistenten Bereitstellung. Abwägung für diesen Kandidaten: gewöhnliche
+  technische Auslieferung ist für den freiwilligen Seitenaufruf erforderlich;
+  der Website-Code fügt keine Analyse, Profile, Tracker oder Embeds hinzu.
+  Dies betrifft das persönliche Webangebot, keine behördliche Aufgabenerfüllung.
+  Die Aussage erstreckt sich nicht pauschal auf alle eigenen Verarbeitungen GitHubs.
+- **Rechtsgrundlagen der E-Mail-Kommunikation:** Art. 6 Abs. 1 lit. b DSGVO nur,
+  soweit für einen Vertrag mit der anfragenden Person oder vorvertragliche Maßnahmen
+  auf deren Anfrage erforderlich; sonst lit. f für die Beantwortung gerichteter
+  Korrespondenz. Die vom Nutzer vorgegebene Aufbewahrung nach Erforderlichkeit,
+  gesetzlichen Pflichten und notwendiger Rechtsverteidigung ist aufgenommen.
+- **Speicherkriterien und internationale Verarbeitung:** GitHubs allgemeine
+  Speichermaßstäbe sind als solche wiedergegeben, nicht als konkrete Pages-Logfrist.
+  Das General Privacy Statement (wirksam seit 27.04.2026) beschreibt Verarbeitung
+  in den USA und weiteren Ländern sowie SCCs und EU-U.S. DPF. Der verlinkte Hinweis
+  ordnet keinen einzelnen Mechanismus speziell den Pages-Besucherlogs zu.
+  Keine erfundenen Standorte, Unterauftragnehmer oder Vertragsdetails.
+- **Art.-13-Informationen für die beschriebenen Vorgänge:** Name/Anschrift/Kontakt,
+  Zwecke, Rechtsgrundlagen, berechtigte Interessen, beteiligter Hostinganbieter und
+  Empfängerkategorie Maildienstanbieter, Speichermaßstäbe, GitHubs internationale
+  Hinweise samt Quellen, Betroffenenrechte und Beschwerderecht sind enthalten.
+  Freiwilligkeit und Folgen fehlender erforderlicher Angaben sind erläutert.
+  Der Website-Code enthält keine automatisierte Entscheidungsfindung; eine
+  Einwilligung wird für die hier beschriebenen Vorgänge nicht als Grundlage verwendet.
+  Unbestätigte Gmail-Verträge oder spezifische Google-Transferdetails werden nicht
+  unterstellt. Die allgemeinen GitHub-Angaben belegen keine Log-spezifische Konfiguration.
 
 ## VERIFY AFTER ACTIVATION
 
@@ -50,19 +74,20 @@ Live-System und konkreten Freigabeblockern.
 
 ## BLOCKER
 
-- **Rechtsgrundlagen und Pflichtinformationen:** Vor öffentlicher Freigabe muss eine
-  qualifizierte rechtliche Prüfung bestimmen, welche Rechtsgrundlagen und ergänzenden
-  Pflichtinformationen für die GitHub-Pages-Auslieferung und die Bearbeitung von
-  E-Mail-Anfragen gelten. Diese Angaben sind im aktuellen Kandidaten bewusst nicht
-  geraten. Optional nicht dokumentierte Hostingdetails sind für sich genommen kein
-  Blocker; die fehlende rechtliche Bewertung der tatsächlich stattfindenden
-  Verarbeitungen ist der konkrete offene Freigabepunkt.
+Kein konkreter verbleibender Offenlegungsblocker für die beschriebenen Vorgänge
+aus den geprüften Quellen und bekannten Tatsachen identifiziert. Der pauschale
+Prozessvorbehalt einer „qualifizierten rechtlichen Prüfung“ entfällt.
+Art. 13 erlaubt Empfängerkategorien und, wenn eine feste Dauer nicht angegeben werden
+kann, Speicherkriterien. Eine nicht veröffentlichte Pages-Logfrist ist daher allein
+kein Blocker. Die Quellen ersetzen keine Garantie rechtlicher Vollständigkeit für
+abweichende tatsächliche Verarbeitungen. Zeigt der Live-Abgleich zusätzliche
+Verarbeitungen oder unzutreffende Angaben, ist die konkrete Abweichung zu beheben.
 
 ## Quellen für die Abschlussprüfung
 
 - [GitHub Pages: Data collection](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection)
-- [§ 5 DDG](https://www.gesetze-im-internet.de/ddg/__5.html)
-- [DSGVO](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02016R0679-20160504)
+- [GitHub General Privacy Statement: Speicherung, internationale Verarbeitung und Garantien](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
+- [DSGVO, insbesondere Art. 6 und Art. 13](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02016R0679-20160504)
 
 Die Quellen und diese technische Bestandsaufnahme sind keine Erklärung rechtlicher
 Gewissheit. Es wurden weder GitHub Pages aktiviert noch CNAME-, DNS-, Deployment-
