@@ -8,8 +8,6 @@ the CV, covering projects, publications and professional background.
 
 **Live site:** <https://florianhoffarth.com>
 
-*TLS certificate provisioning for the custom domain is currently pending.*
-
 ## About
 
 The site presents a professional profile in German, structured around:

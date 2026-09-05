@@ -62,15 +62,17 @@ Stand 2026-09-05, geprüft über HTTP gegen die Produktionsdomain:
   `florianhoffarth.com` erreichbar (HTTP 200).
 - `www.florianhoffarth.com` liefert dieselbe Website aus.
 - Unbekannte Pfade werden von GitHub Pages mit HTTP 404 beantwortet.
+- HTTPS ist aktiv: Let's Encrypt stellt ein Zertifikat für
+  `florianhoffarth.com` und `www.florianhoffarth.com` aus; GitHub Pages
+  erzwingt HTTPS und leitet Aufrufe über `http` sowie `www` auf
+  `https://florianhoffarth.com` um.
 - Veröffentlicht wird ausschließlich der im Deployment-Workflow freigegebene
   Dateisatz; die Repository-Dokumentation ist nicht Teil des Web-Roots.
 
 ## Offene Live-Prüfungen
 
-- **HTTPS:** Die Zertifikatsausstellung für die eigene Domain ist noch nicht
-  abgeschlossen; ein Aufruf über `https://` scheitert derzeit an der
-  Zertifikatsprüfung. HTTPS-Erzwingung und Mixed-Content-Prüfung stehen aus,
-  bis das Zertifikat aktiv ist.
+- **Mixed Content:** Nach der Aktivierung von HTTPS nicht erneut systematisch
+  am Live-System geprüft; die Seiten laden ausschließlich eigene Ressourcen.
 - **Response-Header:** Sicherheits- und Caching-Header werden von GitHub Pages
   gesetzt und sind nicht frei konfigurierbar; eine dokumentierte Bewertung steht aus.
 - **Live-Verhalten:** Netzwerkverkehr, Cookies, Web Storage und Konsolenausgaben
