@@ -1,8 +1,9 @@
-# Produktionscheckliste
+# Produktionsdokumentation
 
-Stand: 2026-09-05. GitHub Pages ist als Hostingdienst ausgewählt, aber noch nicht
-aktiviert. Diese Checkliste trennt bestätigte Tatsachen von Prüfungen am späteren
-Live-System und konkreten Freigabeblockern.
+Stand: 2026-09-05. Die Website ist über GitHub Pages unter der eigenen Domain
+`florianhoffarth.com` veröffentlicht. Dieses Dokument hält die datenschutz- und
+impressumsrelevanten Feststellungen fest, auf denen die Legal-Seiten beruhen,
+und trennt sie von den verbleibenden offenen Prüfpunkten am Live-System.
 
 ## RESOLVED
 
@@ -21,7 +22,7 @@ Live-System und konkreten Freigabeblockern.
   Systemschriftarten, kein JavaScript, keine Analytics, kein Tracking, keine vom
   Website-Code gesetzten Cookies, keine Formulare, kein Login und keine Drittanbieter-
   Embeds. Externe Ziele werden nur über gewöhnliche Links aufgerufen.
-- **Hostingauswahl:** GitHub Pages ist ausgewählt. GitHub dokumentiert, dass beim
+- **Hosting:** Die Auslieferung erfolgt über GitHub Pages. GitHub dokumentiert, dass beim
   Besuch einer Pages-Website Besucher-IP-Adressen zu Sicherheitszwecken protokolliert
   und gespeichert werden, unabhängig von einer Anmeldung bei GitHub. Diese Information
   ist im Datenschutztext enthalten.
@@ -53,26 +54,30 @@ Live-System und konkreten Freigabeblockern.
   Unbestätigte Gmail-Verträge oder spezifische Google-Transferdetails werden nicht
   unterstellt. Die allgemeinen GitHub-Angaben belegen keine Log-spezifische Konfiguration.
 
-## VERIFY AFTER ACTIVATION
+## Live geprüft
 
-- **GitHub-Pages-Auslieferung:** Aktivierung und tatsächlich veröffentlichte Dateien,
-  Pfade, Fehlerseiten und Erreichbarkeit aller drei Seiten prüfen.
-- **Custom Domain und DNS:** Ziel-Domain, DNS-Einträge und Schutz vor Fehlzuordnung
-  anhand der aktiven Konfiguration prüfen.
-- **HTTPS:** Zertifikat, HTTPS-Erzwingung und Mixed Content am Live-System prüfen.
-- **Weiterleitungen:** `http`/`https`, `www`/Apex und GitHub-Pages-Ziel auf eindeutige,
-  funktionierende Weiterleitungen prüfen.
-- **Response-Header:** Tatsächliche Sicherheits-, Caching- und Content-Type-Header
-  dokumentieren und bewerten.
-- **Live-Verhalten:** Netzwerkverkehr, externe Ressourcen, Cookies, Web Storage,
-  Konsolenfehler und Formular-/Skriptfreiheit erneut auf der Produktions-URL prüfen.
-- **Links:** Interne Navigation, Fragmentziele, E-Mail-Link und externe Ziele von der
-  Produktions-URL aus prüfen.
-- **Finaler Datenschutz-/Legal-Abgleich:** Den Text gegen die tatsächlich aktive
-  Pages-, Domain- und E-Mail-Konfiguration prüfen und nur nachgewiesene Abweichungen
-  korrigieren.
+Stand 2026-09-05, geprüft über HTTP gegen die Produktionsdomain:
 
-## BLOCKER
+- Startseite, Impressum, Datenschutz, Stylesheet und Porträt sind unter
+  `florianhoffarth.com` erreichbar (HTTP 200).
+- `www.florianhoffarth.com` liefert dieselbe Website aus.
+- Unbekannte Pfade werden von GitHub Pages mit HTTP 404 beantwortet.
+- Veröffentlicht wird ausschließlich der im Deployment-Workflow freigegebene
+  Dateisatz; die Repository-Dokumentation ist nicht Teil des Web-Roots.
+
+## Offene Live-Prüfungen
+
+- **HTTPS:** Die Zertifikatsausstellung für die eigene Domain ist noch nicht
+  abgeschlossen; ein Aufruf über `https://` scheitert derzeit an der
+  Zertifikatsprüfung. HTTPS-Erzwingung und Mixed-Content-Prüfung stehen aus,
+  bis das Zertifikat aktiv ist.
+- **Response-Header:** Sicherheits- und Caching-Header werden von GitHub Pages
+  gesetzt und sind nicht frei konfigurierbar; eine dokumentierte Bewertung steht aus.
+- **Live-Verhalten:** Netzwerkverkehr, Cookies, Web Storage und Konsolenausgaben
+  wurden am Website-Code geprüft, nicht erneut auf der Produktions-URL.
+- **Zustellung der Kontaktadresse:** nicht geprüft; es wurde keine E-Mail versendet.
+
+## Blocker
 
 Kein konkreter verbleibender Offenlegungsblocker für die beschriebenen Vorgänge
 aus den geprüften Quellen und bekannten Tatsachen identifiziert. Der pauschale
@@ -83,12 +88,12 @@ kein Blocker. Die Quellen ersetzen keine Garantie rechtlicher Vollständigkeit f
 abweichende tatsächliche Verarbeitungen. Zeigt der Live-Abgleich zusätzliche
 Verarbeitungen oder unzutreffende Angaben, ist die konkrete Abweichung zu beheben.
 
-## Quellen für die Abschlussprüfung
+## Quellen
 
 - [GitHub Pages: Data collection](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection)
 - [GitHub General Privacy Statement: Speicherung, internationale Verarbeitung und Garantien](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
 - [DSGVO, insbesondere Art. 6 und Art. 13](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02016R0679-20160504)
 
 Die Quellen und diese technische Bestandsaufnahme sind keine Erklärung rechtlicher
-Gewissheit. Es wurden weder GitHub Pages aktiviert noch CNAME-, DNS-, Deployment-
-oder Merge-Änderungen vorgenommen.
+Gewissheit. Sie beschreiben den Website-Code und die veröffentlichten Angaben des
+Hostinganbieters, nicht dessen tatsächliche interne Konfiguration.
