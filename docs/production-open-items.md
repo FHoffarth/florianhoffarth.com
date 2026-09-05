@@ -1,64 +1,69 @@
-# Vor einer Veröffentlichung zu klären
+# Produktionscheckliste
 
-Die technische V1 ist ein Review-Stand. Impressum und Datenschutz sind eigenständige,
-ausdrücklich als Entwurf gekennzeichnete Seiten mit `noindex`. Das ersetzt keine
-vollständigen Anbieter- und Datenschutzangaben und verhindert keinen öffentlichen Zugriff.
+Stand: 2026-09-05. GitHub Pages ist als Hostingdienst ausgewählt, aber noch nicht
+aktiviert. Diese Checkliste trennt bestätigte Tatsachen von Prüfungen am späteren
+Live-System und konkreten Freigabeblockern.
 
-## Impressum — OPEN
+## RESOLVED
 
-- Veröffentlichungsfähige, vollständige Anschrift des Verantwortlichen bestätigen.
-  Die private Anschrift aus dem Export wurde auch aus dessen sichtbaren TODOs entfernt.
-- Einordnung des Angebots und daraus folgende Pflichtangaben prüfen, einschließlich
-  Anwendbarkeit von § 5 DDG und § 18 MStV. Keine geschäftsmäßige oder rein private
-  Einordnung vorweggenommen; keine Kammer, Register- oder Steuerdaten erfunden.
-- Erforderliche Möglichkeiten unmittelbarer Kontaktaufnahme klären; keine pauschale
-  Behauptung, dass eine E-Mail-Adresse stets genügt. Telefonnummer nur nach Freigabe.
-- Nutzungsrechte des Porträts für die öffentliche Website bestätigen. Das Foto stammt
-  aus der bereitgestellten Design-ZIP; eine Lizenz wurde damit nicht nachgewiesen.
+- **Anbieter- und Postanschrift:** Florian Hoffarth, Ringstr. 48, 64807 Dieburg,
+  Deutschland, ist zur Veröffentlichung freigegeben und in Impressum sowie
+  Datenschutzerklärung eingetragen.
+- **Kontakt:** Die bereits veröffentlichte E-Mail-Adresse
+  `florian.hoffarth1981@gmail.com` ist in beiden Legal-Seiten angegeben.
+- **Art der Website:** Persönliches berufliches Profil und Evidence Layer ohne Shop,
+  SaaS-Angebot, Arbeitgeberfunktion, journalistisch-redaktionellen Nachrichtendienst,
+  Registrierung, Werbung oder Kontaktformular. Es werden keine nicht belegten
+  Register-, Unternehmens-, Kammer-, Steuer-, Lizenz- oder Aufsichtsangaben gemacht.
+- **Porträt:** Florian Hoffarth hat bestätigt, dass es sein eigenes Bild ist, er die
+  Veröffentlichungsrechte hält und die Veröffentlichung auf dieser Website beabsichtigt.
+- **Technische Datenschutzarchitektur:** Statisches HTML/CSS, lokales Porträt,
+  Systemschriftarten, kein JavaScript, keine Analytics, kein Tracking, keine vom
+  Website-Code gesetzten Cookies, keine Formulare, kein Login und keine Drittanbieter-
+  Embeds. Externe Ziele werden nur über gewöhnliche Links aufgerufen.
+- **Hostingauswahl:** GitHub Pages ist ausgewählt. GitHub dokumentiert, dass beim
+  Besuch einer Pages-Website Besucher-IP-Adressen zu Sicherheitszwecken protokolliert
+  und gespeichert werden, unabhängig von einer Anmeldung bei GitHub. Diese Information
+  ist im Datenschutztext enthalten.
+- **Unbelegte Hostingdetails:** Es werden keine konkreten Log-Speicherfristen,
+  Serverstandorte, Unterauftragnehmer, Vertragsdetails oder Mechanismen internationaler
+  Datenübermittlung behauptet.
 
-## Datenschutz — OPEN
+## VERIFY AFTER ACTIVATION
 
-- Vollständige Verantwortlichenangaben nachtragen.
-- Tatsächliche E-Mail-Verarbeitung klären: Dienstanbieter, Empfänger, Zwecke,
-  passende Rechtsgrundlagen, Speicher-/Löschpraxis, gegebenenfalls Drittlandtransfers.
-  Aus der Gmail-Adresse werden keine vertraglichen Details abgeleitet.
-- Informationspflichten anhand aller tatsächlichen Verarbeitungsvorgänge finalisieren;
-  Entwurfshinweise erst nach vollständiger Prüfung ersetzen.
+- **GitHub-Pages-Auslieferung:** Aktivierung und tatsächlich veröffentlichte Dateien,
+  Pfade, Fehlerseiten und Erreichbarkeit aller drei Seiten prüfen.
+- **Custom Domain und DNS:** Ziel-Domain, DNS-Einträge und Schutz vor Fehlzuordnung
+  anhand der aktiven Konfiguration prüfen.
+- **HTTPS:** Zertifikat, HTTPS-Erzwingung und Mixed Content am Live-System prüfen.
+- **Weiterleitungen:** `http`/`https`, `www`/Apex und GitHub-Pages-Ziel auf eindeutige,
+  funktionierende Weiterleitungen prüfen.
+- **Response-Header:** Tatsächliche Sicherheits-, Caching- und Content-Type-Header
+  dokumentieren und bewerten.
+- **Live-Verhalten:** Netzwerkverkehr, externe Ressourcen, Cookies, Web Storage,
+  Konsolenfehler und Formular-/Skriptfreiheit erneut auf der Produktions-URL prüfen.
+- **Links:** Interne Navigation, Fragmentziele, E-Mail-Link und externe Ziele von der
+  Produktions-URL aus prüfen.
+- **Finaler Datenschutz-/Legal-Abgleich:** Den Text gegen die tatsächlich aktive
+  Pages-, Domain- und E-Mail-Konfiguration prüfen und nur nachgewiesene Abweichungen
+  korrigieren.
 
-## Hosting — SELECTED: GitHub Pages — NOT YET ACTIVATED
+## BLOCKER
 
-GitHub Pages ist als Hostingdienst ausgewählt. GitHub dokumentiert, dass beim Besuch
-einer Pages-Website Besucher-IP-Adressen zu Sicherheitszwecken protokolliert und
-gespeichert werden, unabhängig von einer Anmeldung bei GitHub. Daraus werden keine
-konkreten Speicherfristen, Serverstandorte oder vertraglichen Zusicherungen abgeleitet.
+- **Rechtsgrundlagen und Pflichtinformationen:** Vor öffentlicher Freigabe muss eine
+  qualifizierte rechtliche Prüfung bestimmen, welche Rechtsgrundlagen und ergänzenden
+  Pflichtinformationen für die GitHub-Pages-Auslieferung und die Bearbeitung von
+  E-Mail-Anfragen gelten. Diese Angaben sind im aktuellen Kandidaten bewusst nicht
+  geraten. Optional nicht dokumentierte Hostingdetails sind für sich genommen kein
+  Blocker; die fehlende rechtliche Bewertung der tatsächlich stattfindenden
+  Verarbeitungen ist der konkrete offene Freigabepunkt.
 
-Weiterhin OPEN:
-
-- Tatsächliche Pages-Aktivierung gesondert vornehmen; in diesem Vorbereitungsschritt
-  werden weder Pages aktiviert noch eine CNAME-Datei oder Hosting-Konfiguration angelegt.
-- Custom Domain und DNS gesondert konfigurieren und prüfen; hier keine DNS-Änderungen.
-- HTTPS und die tatsächlichen Response-Header, Caching, Fehlerseiten und
-  Weiterleitungen nach Aktivierung prüfen.
-- Live-Verhalten und Ressourcenanfragen prüfen: keine zusätzlichen Skripte,
-  Analytics, Cookies, Telemetrie, externen Fonts oder Embeds durch die Auslieferung.
-- Weitere Zugriffsdaten/Logfelder, konkrete Speicherdauer, Serverstandorte und
-  passende Rechtsgrundlagen anhand verifizierter Angaben prüfen.
-- Vertragsdetails, Auftragsverarbeitung, mögliche Unterauftragnehmer und
-  Drittlandtransfers prüfen; keine Mechanismen oder Beteiligten vorwegnehmen.
-- Finale Datenschutz-/Rechtsprüfung anhand der aktiven Produktionskonfiguration
-  abschließen. Die Legal-Seiten bleiben bis dahin sichtbar als Entwurf markiert.
-- Veröffentlichungsfähige Impressums-/Kontaktdaten und Porträt-Veröffentlichungsrechte
-  wie oben beschrieben klären.
-- Nur die drei HTML-Dateien, styles.css und assets/ als öffentliche Site verwenden;
-  Review-Dokumentation und lokale Arbeitsdateien gehören nicht ins öffentliche Webroot.
-- Der tatsächliche Domain-/DNS-Zustand bleibt bis zur Prüfung UNKNOWN.
-  Diese Vorbereitung ändert keine Produktionskonfiguration und führt keinen Merge aus.
-
-## Quellen für die rechtliche Abschlussprüfung
+## Quellen für die Abschlussprüfung
 
 - [GitHub Pages: Data collection](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection)
 - [§ 5 DDG](https://www.gesetze-im-internet.de/ddg/__5.html)
-- [DSGVO, insbesondere Art. 13 und 15–21 sowie 77](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679)
+- [DSGVO](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02016R0679-20160504)
 
-Die Quellen ersetzen nicht die Erhebung der tatsächlichen Betriebsabläufe.
-Keine Freigabe für Production allein durch technischen Test oder `noindex`.
+Die Quellen und diese technische Bestandsaufnahme sind keine Erklärung rechtlicher
+Gewissheit. Es wurden weder GitHub Pages aktiviert noch CNAME-, DNS-, Deployment-
+oder Merge-Änderungen vorgenommen.
