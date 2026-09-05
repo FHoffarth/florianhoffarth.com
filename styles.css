@@ -70,6 +70,7 @@ p, ul { margin: 0; }
   font-size: 13px; line-height: 1.5; color: var(--muted);
 }
 .path .arrow { color: #C3CCD8; }
+.path-step { display: contents; }
 
 /* Sections */
 main.wrap { padding-bottom: 120px; }
@@ -105,6 +106,7 @@ main.wrap { padding-bottom: 120px; }
   padding: 30px 0; border-bottom: 1px solid var(--rule);
 }
 .project-name { font-size: clamp(22px, 2.1vw, 28px); letter-spacing: -.015em; }
+.project-link { color: inherit; text-decoration: underline; text-decoration-color: var(--rule-2); text-decoration-thickness: 1px; text-underline-offset: .2em; }
 .status {
   font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
   color: var(--muted); white-space: nowrap;
@@ -155,10 +157,15 @@ body > footer { border-top: 1px solid var(--rule); }
   .role-title.lead { font-size: 19px; }
   .project-name { font-size: 20px; }
   .wrap { padding-left: 20px; padding-right: 20px; }
-  .hero { padding-top: 56px; }
+  .hero { padding-top: 32px; }
+  .hero-top { row-gap: 24px; }
+  .lede { margin-top: 20px; }
+  .hero-nav { margin-top: 24px; }
   .hero-photo { flex-basis: 112px; width: 112px; height: 140px; }
-  .path { margin-top: 48px; }
+  .path { margin-top: 24px; padding-top: 16px; }
+  .path-step { display: inline-flex; align-items: baseline; gap: 12px; white-space: nowrap; }
   .section, .section + .section { margin-top: 72px; }
+  #experience { margin-top: 40px; }
   .roles { gap: 48px; }
   main.wrap { padding-bottom: 80px; }
 }
